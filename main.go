@@ -76,7 +76,7 @@ func main() {
 }
 
 func getweather() []byte {
-	resp, _ := http.Get("http://api.weatherapi.com/v1/current.json?key=cf235611d2134941a04202522212505&q=Drammen&aqi=no")
+	resp, _ := http.Get("http://api.weatherapi.com/v1/current.json?key=REMOVEDforPROTECTION&q=Drammen&aqi=no")
 	read, _ := ioutil.ReadAll(resp.Body)
 	defer resp.Body.Close()
 	return read
